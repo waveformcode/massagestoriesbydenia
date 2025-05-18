@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/spa0.jpg");
+  object-fit: cover;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(254, 254, 254);
+  border: 5px solid rgb(222, 205, 111);
+}
+
+.svg-icon {
+  display: flex;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  fill: rgb(111, 84, 15);
+}
+
+header h1 {
+  width: 100%;
+  letter-spacing: 0.3cap;
+  text-align: center;
+  padding: 10px 0 20px 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 2rem;
+  color: rgb(111, 84, 15);
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.hero video {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}
+
+.hero-text {
+  width: 100%;
+  letter-spacing: 0.5cap;
+  text-align: center;
+  padding: 20px;
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  color: rgb(255, 252, 252);
+  margin-top: 200px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.calm-entry {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 80px;
+}
+
+.calm-box {
+  border: 3px solid rgb(208, 198, 136);
+  padding: 15px;
+  border-radius: 80px;
+}
+
+.calm-box3 {
+  border: 3px solid rgb(208, 198, 136);
+  padding: 30px;
+  border-radius: 80px;
+}
+
+.calm-entry h3 {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.calm-entry p {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  opacity: 0.6;
+}
+/*================ MASSAGE BENEFITS ================*/
+
+.massage-benefits {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: rgba(246, 240, 184, 0.221);
+}
+
+.benefits-columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.benefits-column {
+  display: flex;
+  gap: 120px;
+}
+
+.text p {
+  width: 400px;
+  line-height: 1.6;
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+}
+
+.benefits-column2 ul {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 1.3rem;
+  line-height: 2;
+  list-style-type: none;
+}
+
+li::before {
+  content: "✔️";
+  margin-right: 10px;
+  font-weight: 100;
+  color: green;
+}
+
+.benefits-column2 {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 120px;
+  width: 100%;
+}
+
+.benefits-column2 ul {
+  margin-top: 30px;
+}
+
+.benefits-column h3,
+.benefits-column2 h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  opacity: 0.9;
+}
+
+.benefits-column img,
+.benefits-column2 img {
+  width: 840px;
+  height: 550px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+/*================ Massage Journeys ================*/
+.massage-journeys {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.massage-journeys img {
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.journeys {
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgba(246, 246, 240, 0.8);
+  width: 600px;
+  padding: 10px 20px;
+  line-height: 1.5;
+  position: relative;
+}
+
+.journeys h1 {
+  font-family: "Ms Madi", cursive;
+  font-size: 50px;
+  font-weight: 400;
+  background-repeat: no-repeat;
+}
+
+.journeys h2 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.journeys h3 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.journeys p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  background-color: rgba(246, 240, 184, 0.221);
+}
+
+.about img {
+  width: 700px;
+  height: 550px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.about p {
+  width: 700px;
+  line-height: 1.6;
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  margin: 50px auto;
+}
