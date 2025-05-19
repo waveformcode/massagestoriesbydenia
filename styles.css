@@ -72,6 +72,7 @@ header h1 {
   width: 100%;
   padding: 80px;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .calm-box {
@@ -81,15 +82,6 @@ header h1 {
   width: 100%;
   max-width: 350px;
   min-height: 200px;
-}
-
-.calm-box3 {
-  border: 3px solid rgb(208, 198, 136);
-  padding: 30px;
-  border-radius: 80px;
-  width: 100%;
-  max-width: 350px;
-  min-height: 250px;
 }
 
 .calm-entry h3 {
@@ -137,7 +129,8 @@ header h1 {
 }
 
 .text p {
-  width: 400px;
+  width: 100%;
+  max-width: 600px;
   line-height: 1.6;
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
@@ -153,7 +146,8 @@ header h1 {
   font-size: 1.2rem;
   line-height: 2;
   list-style-type: none;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   margin: 0 auto;
   margin-top: 20px;
 }
@@ -183,7 +177,7 @@ li::before {
 
 .massage-journeys img {
   width: 100%;
-  height: 750px;
+  height: 800px;
   object-fit: cover;
   background-repeat: no-repeat;
   position: absolute;
@@ -192,11 +186,23 @@ li::before {
 .journeys {
   text-align: center;
   margin: 0 auto;
-  background-color: rgba(246, 246, 240, 0.8);
-  width: 600px;
+
+  width: 100%;
+  max-width: 600px;
   padding: 10px 20px;
   line-height: 1.5;
   position: relative;
+  padding: 10px;
+}
+
+.journeys-wrap {
+  background-color: rgba(246, 246, 240, 0.8);
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .journeys h1 {
@@ -231,8 +237,10 @@ li::before {
 }
 
 .about img {
-  width: 700px;
-  height: auto;
+  width: 100%;
+  max-width: 700px;
+  height: 100%;
+  max-height: 800px;
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
@@ -253,5 +261,56 @@ li::before {
     align-items: center;
     gap: 30px;
     flex-wrap: nowrap;
+  }
+
+  .calm-box {
+    max-width: 300px;
+  }
+
+  .massage-journeys img {
+    width: 100%;
+    height: 745px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+
+  /*================ MASSAGE BENEFITS MOBILE ================*/
+  .benefits-column,
+  .benefits-column2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .benefits-column .text,
+  .benefits-column2 .text {
+    width: 90%;
+  }
+
+  .benefits-column img {
+    order: 1;
+  }
+
+  .benefits-column .text {
+    order: 2;
+  }
+
+  .calm-box {
+    min-width: 320px;
+  }
+
+  .massage-journeys img {
+    width: 100%;
+    height: 100%;
+    max-height: 1180px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about p {
+    max-width: 300px;
   }
 }
