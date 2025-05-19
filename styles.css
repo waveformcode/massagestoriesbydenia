@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-image: url("images/spa0.jpg");
-  object-fit: cover;
-}
-
 header {
   width: 100%;
   background-color: rgb(254, 254, 254);
@@ -70,27 +65,35 @@ header h1 {
   text-shadow: 1px 1px 2px black;
 }
 
+/*================ CALM BOXES ================*/
 .calm-entry {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   padding: 80px;
+  flex-wrap: wrap;
 }
 
 .calm-box {
   border: 3px solid rgb(208, 198, 136);
   padding: 15px;
   border-radius: 80px;
+  width: 100%;
+  max-width: 350px;
+  min-height: 200px;
 }
 
 .calm-box3 {
   border: 3px solid rgb(208, 198, 136);
   padding: 30px;
   border-radius: 80px;
+  width: 100%;
+  max-width: 350px;
+  min-height: 250px;
 }
 
 .calm-entry h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   text-align: center;
@@ -98,7 +101,7 @@ header h1 {
 }
 
 .calm-entry p {
-  width: 300px;
+  max-width: 300px;
   text-align: center;
   margin: 0 auto;
   line-height: 1.6;
@@ -108,23 +111,28 @@ header h1 {
   opacity: 0.6;
 }
 /*================ MASSAGE BENEFITS ================*/
-
-.massage-benefits {
-  display: flex;
-  width: 100%;
-  height: auto;
+.benefits-columns {
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: rgba(246, 240, 184, 0.221);
 }
 
-.benefits-columns {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.benefits-column,
+.benefits-column2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
-.benefits-column {
-  display: flex;
-  gap: 120px;
+.benefits-column h3,
+.benefits-column2 h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  opacity: 0.9;
+  text-align: center;
 }
 
 .text p {
@@ -133,14 +141,20 @@ header h1 {
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
   font-weight: 200;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .benefits-column2 ul {
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 1.3rem;
+  font-weight: 200;
+  font-size: 1.2rem;
   line-height: 2;
   list-style-type: none;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 li::before {
@@ -150,34 +164,15 @@ li::before {
   color: green;
 }
 
-.benefits-column2 {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 120px;
-  width: 100%;
-}
-
-.benefits-column2 ul {
-  margin-top: 30px;
-}
-
-.benefits-column h3,
-.benefits-column2 h3 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-size: 3rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  opacity: 0.9;
-}
-
 .benefits-column img,
 .benefits-column2 img {
-  width: 840px;
+  width: 100%;
+  max-width: 840px;
   height: 550px;
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
 /*================ Massage Journeys ================*/
 .massage-journeys {
   width: 100%;
@@ -225,6 +220,7 @@ li::before {
   font-weight: 400;
 }
 
+/*================ ABOUT ================*/
 .about {
   display: flex;
   flex-direction: row;
@@ -235,7 +231,7 @@ li::before {
 
 .about img {
   width: 700px;
-  height: 550px;
+  height: auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
@@ -247,4 +243,13 @@ li::before {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   margin: 50px auto;
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .calm-entry {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 }
