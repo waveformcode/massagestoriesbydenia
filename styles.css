@@ -7,10 +7,13 @@
 /*================ HEADER ================*/
 header {
   display: flex;
+  flex-direction: column;
   gap: 20px;
   width: 100%;
   background-color: rgb(254, 254, 254);
   padding: 20px;
+  align-items: center;
+  align-content: center;
 }
 
 .svg-icon {
@@ -23,11 +26,12 @@ header {
 
 header h1 {
   display: flex;
-  align-items: start;
-  align-content: start;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
   width: 100%;
   letter-spacing: 0.3cap;
-  text-align: center;
   padding: 10px 0 20px 0;
   font-family: "Roboto", sans-serif;
   font-weight: 200;
@@ -62,11 +66,12 @@ header h1 {
 
 .hero-text {
   width: 100%;
-  letter-spacing: 0.5cap;
+  letter-spacing: 0.3cap;
   text-align: center;
   padding: 20px;
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
+  font-weight: 200;
   color: rgb(255, 252, 252);
   margin-top: 200px;
   text-shadow: 1px 1px 2px black;
@@ -84,7 +89,7 @@ header h1 {
 
 .calm-box {
   border: 3px solid rgb(208, 198, 136);
-  padding: 15px;
+  padding: 25px;
   border-radius: 80px;
   width: 100%;
   max-width: 350px;
@@ -136,6 +141,7 @@ header h1 {
 
 .text {
   margin: 0 auto;
+  max-width: 90%;
 }
 
 .text p {
@@ -254,21 +260,36 @@ li::before {
 .about img {
   width: 100%;
   max-width: 700px;
-
   max-height: 1000px;
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
 
 .about p {
+  width: 90%;
   max-width: 700px;
-  height: 100%;
+  height: 900%;
   line-height: 1.6;
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   margin: 50px auto;
-  margin-left: 50px;
+  padding: 20px;
+}
+
+/*================ ABOUT MOBILE ================*/
+@media (max-width: 1000px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about p {
+    width: 90%;
+    margin-left: 20px;
+    align-items: center;
+    margin: 50px auto;
+  }
 }
 
 /*================ FOOTER ================*/
@@ -283,6 +304,7 @@ li::before {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
 }
 
 .bookings p {
@@ -292,9 +314,7 @@ li::before {
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
   font-weight: 200;
-  padding-top: 40px;
 }
-
 .bookings img {
   width: 180px;
   height: auto;
@@ -308,14 +328,12 @@ li::before {
   line-height: 1.6;
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
-  margin-top: 50px;
 }
 
 .contacts h4 {
   font-weight: 200;
   font-size: 1.8rem;
   letter-spacing: 0.1cap;
-  padding-bottom: 10px;
 }
 
 .contacts p {
@@ -327,12 +345,14 @@ li::before {
   text-decoration: none;
 }
 
+/*================ Social ================*/
 .footer-social {
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-size: 1.5rem;
   margin: 30px auto;
-  width: 300px;
+  max-width: 800px;
 }
 
 .footer-social p {
@@ -340,12 +360,8 @@ li::before {
   font-weight: 200;
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
-  padding-right: 20px;
-  margin: 10px auto;
-}
-
-.footer-social a {
-  margin-left: 38%;
+  margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 /*================ Rensponsive ================*/
@@ -406,23 +422,18 @@ li::before {
   .li-gap {
     margin-bottom: 30px;
   }
-  /*================ ABOUT MOBILE ================*/
-  .about {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .about p {
-    width: 90%;
-    margin-left: 20px;
-    align-items: center;
-  }
 
   .bookings {
     display: flex;
     flex-direction: column;
   }
 
+  /*================ SOCIAL MOBILE ================*/
+  .contacts {
+    margin: 30px;
+  }
+
+  /*================ BOOKINGS MOBILE ================*/
   .bookings p {
     align-items: center;
     text-align: center;
