@@ -19,9 +19,14 @@ header {
 .svg-icon {
   display: flex;
   margin: 0 auto;
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   fill: rgb(181, 165, 123);
+}
+
+.svg-icon path {
+  fill: rgb(181, 165, 123);
+  stroke: rgb(255, 255, 255);
 }
 
 header h1 {
@@ -34,7 +39,7 @@ header h1 {
   letter-spacing: 0.3cap;
   padding: 10px 0 20px 0;
   font-family: "Roboto", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1.6rem;
   color: rgb(181, 165, 123);
 }
@@ -70,7 +75,7 @@ header h1 {
   text-align: center;
   padding: 20px;
   font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2vw, 1.3rem);
   font-weight: 200;
   color: rgb(255, 252, 252);
   margin-top: 200px;
@@ -188,14 +193,6 @@ li::before {
   position: relative;
 }
 
-.massage-journeys img {
-  width: 100%;
-  height: 800px;
-  object-fit: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-
 .journeys {
   text-align: center;
   margin: 0 auto;
@@ -204,9 +201,9 @@ li::before {
   padding: 10px 20px;
   line-height: 1.5;
   position: relative;
-
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  padding: 15px;
 }
 
 .journeys-wrap {
@@ -222,7 +219,6 @@ li::before {
   font-family: "Nothing You Could Do", cursive;
   font-size: 50px;
   font-weight: 200;
-  background-repeat: no-repeat;
 }
 
 .journeys h2 {
@@ -238,11 +234,12 @@ li::before {
 .journeys p {
   font-size: 1.3rem;
   font-weight: 300;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.219);
 }
 
 .massage-journeys img {
   width: 100%;
-  height: 745px;
+  height: 835px;
   object-fit: cover;
   background-repeat: no-repeat;
   position: absolute;
@@ -268,7 +265,6 @@ li::before {
 .about p {
   width: 90%;
   max-width: 700px;
-  height: 900%;
   line-height: 1.6;
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
@@ -351,7 +347,7 @@ li::before {
   flex-direction: column;
   align-items: center;
   font-size: 1.5rem;
-  margin: 30px auto;
+  margin: 10px auto;
   max-width: 800px;
 }
 
@@ -362,6 +358,7 @@ li::before {
   line-height: 1.6;
   margin: 0 auto;
   padding-bottom: 10px;
+  display: none;
 }
 
 /*================ Rensponsive ================*/
@@ -430,7 +427,7 @@ li::before {
 
   /*================ SOCIAL MOBILE ================*/
   .contacts {
-    margin: 30px;
+    margin: 10px;
   }
 
   /*================ BOOKINGS MOBILE ================*/
