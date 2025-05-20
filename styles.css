@@ -18,7 +18,7 @@ header {
   margin: 0 auto;
   width: 60px;
   height: 60px;
-  fill: rgb(111, 84, 15);
+  fill: rgb(181, 165, 123);
 }
 
 header h1 {
@@ -32,7 +32,7 @@ header h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   font-size: 1.6rem;
-  color: rgb(111, 84, 15);
+  color: rgb(181, 165, 123);
 }
 
 /*================ HERO ================*/
@@ -146,7 +146,6 @@ header h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   align-items: center;
-  border-radius: 20px;
 }
 
 .benefits-column2 ul {
@@ -199,7 +198,9 @@ li::before {
   padding: 10px 20px;
   line-height: 1.5;
   position: relative;
-  padding: 10px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 .journeys-wrap {
@@ -212,14 +213,14 @@ li::before {
 }
 
 .journeys h1 {
-  font-family: "Ms Madi", cursive;
+  font-family: "Nothing You Could Do", cursive;
   font-size: 50px;
-  font-weight: 400;
+  font-weight: 200;
   background-repeat: no-repeat;
 }
 
 .journeys h2 {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.2rem;
 }
 
@@ -230,7 +231,15 @@ li::before {
 
 .journeys p {
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 300;
+}
+
+.massage-journeys img {
+  width: 100%;
+  height: 745px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  position: absolute;
 }
 
 /*================ ABOUT ================*/
@@ -265,18 +274,81 @@ li::before {
 /*================ FOOTER ================*/
 .footer {
   width: 100%;
-  height: 400px;
-  display: none;
+  height: auto;
+  background-color: rgba(246, 246, 240, 0.8);
 }
 
-.footer p {
-  width: 300px;
+.bookings {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookings p {
+  width: 100%;
+  max-width: 500px;
   line-height: 1.6;
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-weight: 200;
+  padding-top: 40px;
 }
 
+.bookings img {
+  width: 180px;
+  height: auto;
+}
+
+/*================ CONTACTS ================*/
+.contacts {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  margin-top: 50px;
+}
+
+.contacts h4 {
+  font-weight: 200;
+  font-size: 1.8rem;
+  letter-spacing: 0.1cap;
+  padding-bottom: 10px;
+}
+
+.contacts p {
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+.contacts a {
+  text-decoration: none;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin: 30px auto;
+  width: 300px;
+}
+
+.footer-social p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  padding-right: 20px;
+  margin: 10px auto;
+}
+
+.footer-social a {
+  margin-left: 38%;
+}
+
+/*================ Rensponsive ================*/
 @media screen and (max-width: 768px) {
   .calm-entry {
     flex-direction: column;
@@ -317,14 +389,22 @@ li::before {
     order: 2;
   }
 
-  .calm-box {
-    min-width: 320px;
-  }
-
   .massage-journeys img {
     width: 100%;
     height: 100%;
     max-height: 1180px;
+  }
+
+  .calm-box {
+    min-width: 320px;
+  }
+
+  .benefits-columns p {
+    margin-bottom: 30px;
+  }
+
+  .li-gap {
+    margin-bottom: 30px;
   }
   /*================ ABOUT MOBILE ================*/
   .about {
@@ -333,6 +413,19 @@ li::before {
   }
 
   .about p {
-    min-width: 300px;
+    width: 90%;
+    margin-left: 20px;
+    align-items: center;
+  }
+
+  .bookings {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bookings p {
+    align-items: center;
+    text-align: center;
+    width: 90%;
   }
 }
