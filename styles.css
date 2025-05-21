@@ -417,6 +417,7 @@ li::before {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    gap: 0;
   }
   /*================ SOCIAL MOBILE ================*/
   .contacts {
@@ -430,6 +431,15 @@ li::before {
     text-align: center;
     order: 1;
     width: 300px;
+  }
+
+  .bookings img {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    align-content: center;
+    text-align: center;
   }
 
   .footer-social {
