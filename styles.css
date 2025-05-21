@@ -407,10 +407,7 @@ li::before {
     margin-bottom: 30px;
   }
 
-  .bookings {
-    display: flex;
-    flex-direction: column;
-  }
+  /*================ FOOTER MOBILE ================*/
 
   .footer-wrapper {
     display: flex;
@@ -423,6 +420,7 @@ li::before {
   .contacts {
     margin: 10px;
     order: 2;
+    padding-top: 20px;
   }
 
   /*================ BOOKINGS MOBILE ================*/
@@ -431,6 +429,7 @@ li::before {
     text-align: center;
     order: 1;
     width: 300px;
+    padding-top: 0;
   }
 
   .bookings img {
@@ -444,5 +443,6 @@ li::before {
 
   .footer-social {
     order: 3;
+    padding-top: 20px;
   }
 }
