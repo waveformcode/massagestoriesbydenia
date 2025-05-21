@@ -342,8 +342,6 @@ li::before {
 }
 
 .fb {
-  width: 50px;
-  height: 50px;
   background-color: rgb(66, 103, 178);
   fill: rgb(244, 246, 250);
   border-radius: 80px;
@@ -414,15 +412,27 @@ li::before {
     flex-direction: column;
   }
 
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
   /*================ SOCIAL MOBILE ================*/
   .contacts {
     margin: 10px;
+    order: 2;
   }
 
   /*================ BOOKINGS MOBILE ================*/
   .bookings p {
     align-items: center;
     text-align: center;
-    width: 90%;
+    order: 1;
+    width: 300px;
+  }
+
+  .footer-social {
+    order: 3;
   }
 }
