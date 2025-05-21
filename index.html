@@ -32,8 +32,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <svg
+
+
+    <!----- HERO ----->
+<header class="hero">
+  <video autoplay muted loop playsinline>
+    <source src="images/video1.mp4" type="video/mp4" />
+  </video>
+  <div class="overlay">
+    <div class="hero-content">
+     <svg
         class="svg-icon"
         height="800px"
         width="800px"
@@ -82,19 +90,10 @@
         </g>
       </svg>
       <h1>Massage Stories by Denia</h1>
-    </header>
+    </div>
+  </div>
+</header>
 
-    <!----- HERO ----->
-    <section class="hero">
-      <video autoplay muted loop playsinline>
-        <source src="images/video1.mp4" type="video/mp4" />
-      </video>
-      <div class="overlay">
-        <div class="hero-text">
-          <h1>Tailored massage that supports your wellbeing naturally.</h1>
-        </div>
-      </div>
-    </section>
 
     <!----- CALM ENTRY ----->
     <section class="calm-entry">
@@ -128,14 +127,12 @@
           <div class="text">
             <h3>Why Choose Denia</h3>
             <p>
-              Massage isn’t just a technique it’s a shared experience of
-              presence, care and deep listening. With a gentle approach shaped
-              by years of experience in boutique hotels and private sessions,
-              In your own space, I guide your body to soften, breathe, and release 
-              with care and intention. Each treatment is personalized, unrushed, and rooted in
-              respect for your unique rhythm. Whether you’re seeking relief from
-              tension or a moment to reconnect with yourself, I’m here to
-              support your journey naturally and wholeheartedly.
+             Massage isn’t just a technique it’s a shared experience of presence,
+            care, and deep listening. With a gentle touch shaped by years
+            of experience, In your own space, your body feels safe to soften, 
+            breathe, and release. Each session is personalized, unhurried 
+            and grounded in respect for your unique rhythm. 
+            I’m here to support you naturally and wholeheartedly.
             </p>
           </div>
         </div>
@@ -294,6 +291,7 @@
 
      <!----- FOOTER ----->
     <footer class="footer">
+      <div class="footer-wrapper">
       <div class="bookings">
         <img src="images/calendar2.png" alt="Calentar">
         <p>
@@ -302,36 +300,33 @@
           own space.
         </p>
       </div>
+     
       <div class="contacts">
         <h4>Contact Us</h4>
-        <p>
-          Tel:
-          <i class="fa-solid fa-mobile-screen-button phone-icon"></i>
-          <a class="tel" href="tel:+306945037606">++30 694 5037606</a>
-        </p>
-          <p>
-          Tel:
-          <i class="fa-solid fa-mobile-screen-button phone-icon"></i>
-          <a class="tel" href="tel:+30698 4378931">+30 698 4378931</a>
-        </p>
-        <p>
-          <i class="fab fa-whatsapp whatsapp-icon"></i>
-          <a
-            class="app"
-            href="https://wa.me/6945037606"
-            target="_blank"
-            rel="noopener noreferrer"
-            >WhatsApp Us</a
-          >
-        </p>
-      </div>
+      <a class="tel" href="tel:+306945037606">
+       +30 694 5037606 <i class="fa-solid fa-mobile-screen-button phone-icon"></i>
+      </a>
+
+      <a class="tel" href="tel:+306984378931">
+       +30 698 4378931 <i class="fa-solid fa-mobile-screen-button phone-icon"></i>
+       </a>
+
+      <a class="app"
+        href="https://wa.me/6945037606"
+        target="_blank"
+        rel="noopener noreferrer">WhatsApp Us</a>
+     </div>
 
 <div class="footer-social">
-  <p>Find us on instagram</p>
+  <p>Follow the Journey</p>
+
+  <a href="https://www.facebook.com/share/19MgEXcYK4/" target="_blank" rel="noopener noreferrer"><svg class="social fb" fill="#000000" width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M21.95 5.005l-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z"/>
+  </svg></a>
         <a href="https://www.instagram.com/massagestoriesbydenia?igsh=a3B1cjV2enltbDQw" target="_blank" rel="noopener noreferrer">
           <?xml version="1.0" encoding="iso-8859-1"?>
+          
           <svg
-            class="ig"
+            class="social ig"
             height="50px"
             width="50px"
             version="1.1"
@@ -413,6 +408,7 @@
             </g>
           </svg>
         </a>
+     </div>
     </footer>
   </body>
 </html>
