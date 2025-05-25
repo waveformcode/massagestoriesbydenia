@@ -280,7 +280,7 @@ li::before {
   display: flex;
   align-items: center;
   text-align: center;
-  gap: 180px;
+  gap: 120px;
 }
 
 .bookings {
@@ -310,7 +310,7 @@ li::before {
 }
 
 .contacts h4 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 300;
   padding-bottom: 10px;
 }
@@ -321,7 +321,9 @@ li::before {
   text-decoration: none;
   line-height: 1.5;
   font-weight: 300;
+  width: 180px;
 }
+
 .footer-social p {
   padding-bottom: 15px;
 }
@@ -334,6 +336,7 @@ li::before {
   order: 3;
   align-items: center;
   padding-top: 100px;
+  flex-wrap: wrap;
 }
 
 .footer-social i {
