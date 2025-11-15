@@ -676,10 +676,11 @@ video {
   /*================ APPOINTMENT MOBILE ================*/
 
   .appointment h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     padding-left: 20px;
     margin-right: auto;
     margin-bottom: 0;
+    width: 80%;
   }
 
   .appointment p {
@@ -706,7 +707,7 @@ video {
   }
 
   .about h3 {
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 0 20px;
     margin-right: auto;
   }
