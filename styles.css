@@ -369,7 +369,7 @@ video {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to top, rgb(197, 174, 134), white);
+  background: linear-gradient(to left, rgb(197, 174, 134), white);
   padding: 100px 0 40px 0;
 }
 
@@ -397,7 +397,7 @@ video {
 
 .contacts a {
   font-size: 0.9rem;
-  color: black;
+  color: #333;
   text-decoration: none;
   line-height: 1.8;
   font-weight: 400;
@@ -438,6 +438,7 @@ video {
 .site-map li a {
   text-decoration: none;
   font-weight: 400;
+  color: #333;
 }
 
 .footer a:hover {
