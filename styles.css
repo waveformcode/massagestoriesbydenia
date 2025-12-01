@@ -348,7 +348,7 @@ video {
 }
 
 .about h2 {
-  font-size: clamp(1.4rem, 5vw, 7rem);
+  font-size: clamp(3rem, 5vw, 7rem);
   font-weight: 500;
   padding: 100px;
   color: #33333385;
@@ -703,19 +703,13 @@ video {
   .about {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding-top: 0;
+    padding-top: 80px;
     margin-top: 0;
   }
 
-  .about h3 {
-    font-size: 3rem;
-    padding: 0 20px;
-    margin-right: auto;
-  }
   .about h2 {
     margin: 0;
-    padding: 20px;
+    padding: 0 20px;
   }
 
   /*================ FOOTER MOBILE ================*/
