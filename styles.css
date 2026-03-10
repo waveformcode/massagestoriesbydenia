@@ -292,7 +292,6 @@ video {
   object-fit: cover;
   background-repeat: no-repeat;
   position: absolute;
-  filter: blur(3px);
 }
 
 /*================ APPOINTMENT ================*/
@@ -584,10 +583,12 @@ video {
     gap: 15px;
     opacity: 0;
     padding-top: 50px;
+    pointer-events: none;
   }
 
   .nav ul.active {
     opacity: 1;
+    pointer-events: auto;
   }
 
   .nav li a {
@@ -715,22 +716,6 @@ video {
   }
 
   /*================ BOOKINGS MOBILE ================*/
-  .bookings p {
-    align-items: center;
-    text-align: center;
-    order: 1;
-    width: 300px;
-    padding-top: 0;
-  }
-
-  .bookings img {
-    display: flex;
-    width: 100%;
-    margin: 0 auto;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-  }
   .contacts {
     margin-top: 40px;
     order: 2;
@@ -754,5 +739,6 @@ video {
 
   .signatures {
     order: 5;
+    padding-bottom: 20px;
   }
 }
